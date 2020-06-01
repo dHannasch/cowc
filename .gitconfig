@@ -1,0 +1,6 @@
+# To use this filter,
+# git config --local include.path ../.gitconfig
+# to make this a local config file of your copy of the git repository.
+# If it worked, then git config --includes --list should show the filter given below.
+[filter "strip-jupyter-notebook-output"]
+    clean = "jupyter nbconvert --ClearOutputPreprocessor.enabled=True --to=notebook --stdin --stdout --log-level=ERROR"

@@ -1,0 +1,70 @@
+# This file exists so you can easily regenerate your project.
+#
+# `cookiepatcher` is a convenient shim around `cookiecutter`
+# for regenerating projects (it will generate a .cookiecutterrc
+# automatically for any template). To use it:
+#
+#    pip install cookiepatcher
+#    cookiepatcher gh:ionelmc/cookiecutter-pylibrary project-path
+#
+# See:
+#    https://pypi.org/project/cookiepatcher
+#
+# Alternatively, you can run:
+#
+#    cookiecutter --overwrite-if-exists --config-file=project-path/.cookiecutterrc gh:ionelmc/cookiecutter-pylibrary
+
+default_context:
+
+    _extensions:               ['jinja2_time.TimeExtension']
+    _template:                 'cookiecutter-pylibrary/'
+    allow_tests_inside_package: 'yes'
+    appveyor:                  'yes'
+    c_extension_function:      'longest'
+    c_extension_module:        '_cars_overhead_with_context'
+    c_extension_optional:      'no'
+    c_extension_support:       'no'
+    c_extension_test_pypi:     'no'
+    c_extension_test_pypi_username: 'LLNL'
+    ci_https_proxy:            'no'
+    codacy:                    'no'
+    codacy_projectid:          '[Get ID from https://app.codacy.com/app/LLNL/cars-overhead-with-context/settings]'
+    codeclimate:               'no'
+    codecov:                   'no'
+    command_line_interface:    'click'
+    command_line_interface_bin_name: 'cars-overhead-with-context'
+    coveralls:                 'no'
+    coveralls_token:           '[Required for Appveyor, take it from https://coveralls.io/github/LLNL/cars-overhead-with-context]'
+    distribution_name:         'cars-overhead-with-context'
+    email:                     'mundhenk1@llnl.gov'
+    full_name:                 'T. Nathan Mundhenk'
+    landscape:                 'no'
+    license:                   'no'
+    linter:                    'flake8'
+    package_name:              'cars_overhead_with_context'
+    project_name:              'Cars Overhead With Context'
+    project_short_description: 'An example package. Generated with cookiecutter-pylibrary.'
+    pypi_badge:                'no'
+    pypi_disable_upload:       'no'
+    release_date:              'today'
+    repo_hosting:              'github.com'
+    repo_hosting_domain:       'github.com'
+    repo_name:                 'cars-overhead-with-context'
+    repo_username:             'LLNL'
+    requiresio:                'no'
+    scrutinizer:               'no'
+    setup_py_uses_setuptools_scm: 'yes'
+    setup_py_uses_test_runner: 'no'
+    sphinx_docs:               'yes'
+    sphinx_docs_hosting:       'https://cars-overhead-with-context.readthedocs.io/'
+    sphinx_doctest:            'yes'
+    sphinx_theme:              'sphinx-rtd-theme'
+    test_matrix_configurator:  'no'
+    test_matrix_separate_coverage: 'no'
+    test_runner:               'pytest'
+    travis:                    'yes'
+    travis_osx:                'no'
+    version:                   '0.0.0'
+    website:                   'https://github.com/LLNL/cowc'
+    year_from:                 '2019'
+    year_to:                   '2020'
